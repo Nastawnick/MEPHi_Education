@@ -13,7 +13,7 @@ class BankAccount:
     def withdraw(self, amount):
         if amount <= 0:
             raise ValueError("Сумма снятия должна быть больше нуля")
-        if amount > self.balance:      # <-- ЗАКОММЕНТИРОВАТЬ ЭТУ СТРОКУ
+        if amount > self.balance:
             raise ValueError("Недостаточно средств на счёте")
         self.balance -= amount
 
