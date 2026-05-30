@@ -33,3 +33,4 @@ class BankAccount:
             raise ValueError("Процентная ставка должна быть больше нуля")
         interest = self.balance * rate / 100
         self.balance += interest
+
